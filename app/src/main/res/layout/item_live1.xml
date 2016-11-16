@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/item_live1_relativeLayout"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/item_live1_imageViewTu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/finding_title_tag"/>
+
+        <TextView
+            android:id="@+id/item_live1_textViewTu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/item_live1_imageViewTu"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="排行榜"/>
+
+        <comm.mobile.demo.widget.MyRadioButton
+            android:layout_alignParentRight="true"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_marginTop="15dp"
+            app:drawableSize="20dp"
+            android:textColor="#BBBBBB"
+            android:layout_marginRight="15dp"
+            app:drawableBottom="@drawable/ic_more_normal"
+            android:text="更多"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_live1_relativeLayoutUp"
+        android:layout_below="@id/item_live1_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_live1_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:src="@drawable/image_default"/>
+
+    <TextView
+        android:id="@+id/item_live1_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_live1_imageView"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        android:text="hah"/>
+
+    <TextView
+        android:id="@+id/item_live1_textViewZhiBo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_live1_textView"
+        android:layout_toRightOf="@id/item_live1_imageView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"
+        android:text="正在直播："/>
+
+    <TextView
+        android:id="@+id/item_live1_textViewName"
+        android:layout_toRightOf="@id/item_live1_textViewZhiBo"
+        android:layout_width="wrap_content"
+        android:text="haha"
+        android:textSize="14sp"
+        android:layout_alignTop="@id/item_live1_textViewZhiBo"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/item_live1_imageViewPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_myitem_playtimes_new"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@id/item_live1_imageView"
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/item_live1_textViewName"/>
+
+    <TextView
+        android:id="@+id/item_live1_textViewPeople"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="aha"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@id/item_live1_imageViewPlay"
+        android:layout_toRightOf="@id/item_live1_imageViewPlay"
+        android:textSize="14sp"/>
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_live1_linearLayoutUp1"
+        android:layout_below="@id/item_live1_relativeLayoutUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/item_live1_imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/image_default"/>
+
+        <TextView
+            android:id="@+id/item_live1_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/item_live1_imageView1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:text="hah"/>
+
+        <TextView
+            android:id="@+id/item_live1_textViewZhiBo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_live1_textView1"
+            android:layout_toRightOf="@id/item_live1_imageView1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:text="正在直播："/>
+
+        <TextView
+            android:id="@+id/item_live1_textViewName1"
+            android:layout_toRightOf="@id/item_live1_textViewZhiBo1"
+            android:layout_width="wrap_content"
+            android:text="haha"
+            android:textSize="14sp"
+            android:layout_alignTop="@id/item_live1_textViewZhiBo1"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/item_live1_imageViewPlay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_myitem_playtimes_new"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@id/item_live1_imageView1"
+            android:layout_marginTop="3dp"
+            android:layout_below="@id/item_live1_textViewName1"/>
+
+        <TextView
+            android:id="@+id/item_live1_textViewPeople2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aha"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignTop="@id/item_live1_imageViewPlay2"
+            android:layout_toRightOf="@id/item_live1_imageViewPlay2"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_live1_linearLayoutUp2"
+        android:layout_below="@id/item_live1_linearLayoutUp1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/item_live1_imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/image_default"/>
+
+        <TextView
+            android:id="@+id/item_live1_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/item_live1_imageView2"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:text="hah"/>
+
+        <TextView
+            android:id="@+id/item_live1_textViewZhiBo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_live1_textView2"
+            android:layout_toRightOf="@id/item_live1_imageView2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:text="正在直播："/>
+
+        <TextView
+            android:id="@+id/item_live1_textViewName2"
+            android:layout_toRightOf="@id/item_live1_textViewZhiBo2"
+            android:layout_width="wrap_content"
+            android:text="haha"
+            android:textSize="14sp"
+            android:layout_alignTop="@id/item_live1_textViewZhiBo2"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/item_live1_imageViewPlay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_myitem_playtimes_new"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@id/item_live1_imageView2"
+            android:layout_marginTop="3dp"
+            android:layout_below="@id/item_live1_textViewName2"/>
+
+        <TextView
+            android:id="@+id/item_live1_textViewPeople1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aha"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignTop="@id/item_live1_imageViewPlay1"
+            android:layout_toRightOf="@id/item_live1_imageViewPlay1"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

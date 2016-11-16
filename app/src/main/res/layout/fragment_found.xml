@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="comm.mobile.demo.fragment.FoundFragment">
+
+    <RelativeLayout
+        android:id="@+id/fragment_found_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="0.7"
+            android:scaleY="0.6"
+            android:scaleType="fitCenter"
+            android:padding="7dp"
+            android:src="@drawable/myspin_title_logo"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_search_normal"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/fragment_found_linearLayout"
+        android:layout_below="@id/fragment_found_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <!--  -->
+        <android.support.design.widget.TabLayout
+            android:id="@+id/fragment_found_tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="ifContentScrolls"
+            app:tabIndicatorColor="@android:color/holo_red_dark"
+            app:tabIndicatorHeight="1dp"
+            app:tabTextColor="#000"
+            app:tabSelectedTextColor="@android:color/holo_red_dark"
+            app:tabTextAppearance="@style/MyTabLayoutTextAppearance">
+        </android.support.design.widget.TabLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fragment_found_viewPager"
+        android:layout_below="@id/fragment_found_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

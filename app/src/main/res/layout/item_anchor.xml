@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/item_anchor_relativeLayout"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/item_anchor_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/finding_title_tag"/>
+
+        <TextView
+            android:id="@+id/item_anchor_textViewOutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/item_anchor_imageView"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="加载中"/>
+
+        <comm.mobile.demo.widget.MyRadioButton
+            android:layout_alignParentRight="true"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            app:drawableSize="20dp"
+            android:textColor="#BBBBBB"
+            android:layout_marginRight="15dp"
+            app:drawableBottom="@drawable/ic_more_normal"
+            android:text="更多"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@id/item_anchor_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/item_anchor_coverMiddle"
+                android:layout_width="wrap_content"
+                android:src="@drawable/myspin_image_default_album_s"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/item_anchor_trackTitle"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/item_anchor_coverMiddle"
+                android:text="haha"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_below="@id/item_anchor_trackTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#f00"
+                android:background="@android:color/transparent"
+                android:text="+  关注"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/item_anchor_coverMiddle1"
+                android:layout_width="wrap_content"
+                android:src="@drawable/myspin_image_default_album_s"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/item_anchor_trackTitle1"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/item_anchor_coverMiddle1"
+                android:text="haha"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_below="@id/item_anchor_trackTitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#f00"
+                android:background="@android:color/transparent"
+                android:text="+  关注"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/item_anchor_coverMiddle2"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/myspin_image_default_album_s"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/item_anchor_trackTitle2"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/item_anchor_coverMiddle2"
+                android:text="haha"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_below="@id/item_anchor_trackTitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#f00"
+                android:background="@android:color/transparent"
+                android:text="+  关注"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

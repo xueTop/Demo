@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="comm.mobile.demo.fragment.found.LiveFragment">
+
+    <RadioGroup
+        android:id="@+id/fragment_live_radioGroup"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:scaleX="0.4"
+            android:scaleY="0.4"
+            android:textSize="25sp"
+            android:drawableTop="@drawable/live_select_1"
+            android:layout_height="wrap_content"
+            android:text="本地台"/>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:scaleX="0.4"
+            android:scaleY="0.4"
+            android:textSize="25sp"
+            android:drawableTop="@drawable/live_select_2"
+            android:layout_height="wrap_content"
+            android:text="国家台"/>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:scaleX="0.4"
+            android:scaleY="0.4"
+            android:textSize="25sp"
+            android:drawableTop="@drawable/live_select_3"
+            android:layout_height="wrap_content"
+            android:text="省市台"/>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:scaleX="0.4"
+            android:scaleY="0.4"
+            android:textSize="25sp"
+            android:drawableTop="@drawable/live_select_4"
+            android:layout_height="wrap_content"
+            android:text="网络台"/>
+
+    </RadioGroup>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:src="#EEECE9"/>
+
+    <ListView
+        android:id="@+id/fragment_live_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+</LinearLayout>
+
